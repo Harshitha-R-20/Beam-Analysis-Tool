@@ -1,5 +1,7 @@
 # Beam Analysis Tool
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17372120.svg)](https://doi.org/10.5281/zenodo.17372120)
+
 This Python package provides comprehensive tools for analyzing simply supported beams subjected to point loads and uniformly distributed loads. It computes shear force and bending moment diagrams, calculates maximum deflections, and visualizes results with publication-quality plots suitable for civil and structural engineering research and education.
 
 ## Features
@@ -15,8 +17,9 @@ This Python package provides comprehensive tools for analyzing simply supported 
 3. Run examples with `python main.py`.
 
 ## Citation
-Please cite this repository when using this tool:
-Harshitha, R. (2025). Beam Analysis Tool (Version 1.0.0) [Software]. GitHub. https://github.com/Harshitha-R-20/Beam-Analysis-Tool
+Please cite this repository or its DOI when using this tool:
+
+Harshitha, R. (2025). Beam Analysis Tool (Version 1.0.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.17372120
 
 ## License
 MIT License
