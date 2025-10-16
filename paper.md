@@ -2,7 +2,7 @@
 title: 'Beam Analysis Tool: Open Source Python Package for Civil and Structural Engineering'
 authors:
   - name: Harshitha R.
-    affiliation: Department of Civil Engineering, [Your University], India
+    affiliation: Student, Department of Civil Engineering, Dayananda Sagar College of Engineering, Bangalore, India
     github: Harshitha-R-20
 repository: https://github.com/Harshitha-R-20/Beam-Analysis-Tool
 archive: https://doi.org/10.5281/zenodo.17372120
