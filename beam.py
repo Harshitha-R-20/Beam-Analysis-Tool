@@ -55,7 +55,6 @@ class Beam:
         D = np.array([self.deflection(x) for x in xs])
 
         fig, axs = plt.subplots(3, 1, figsize=(12, 14))
-
         font_title = {'fontsize': 16, 'fontweight': 'bold'}
         font_axis = {'fontsize': 13}
         font_label = {'fontsize': 12}
@@ -69,19 +68,21 @@ class Beam:
 
         axs[1].plot(xs, M, label='Bending Moment', color='orange')
         axs[1].set_title('Bending Moment Diagram', **font_title)
-        axs[1].set_xlabel('Beam Length (m)', **font_axis)
+        axs[1].set_xlabel('Beam Length (m)', **font_axis,labelpad=15)
         axs[1].set_ylabel('Bending Moment (kNm)', **font_label)
         axs[1].legend(loc='best')
         axs[1].grid(True)
 
         axs[2].plot(xs, D, label='Deflection', color='green')
         axs[2].set_title('Deflection Diagram', **font_title)
-        axs[2].set_xlabel('Beam Length (m)', **font_axis)
+        axs[2].set_xlabel('Beam Length (m)', **font_axis,labelpad=15)
         axs[2].set_ylabel('Deflection (m)', **font_label)
         axs[2].legend(loc='best')
         axs[2].grid(True)
 
-        plt.tight_layout()
+        # remove overlapping suptitle, adjust layout
+        plt.tight_layout(rect=[0,0.04,1,1])
+
         if export:
             fig.savefig('beam_diagrams.png')
             fig.savefig('beam_diagrams.pdf')
